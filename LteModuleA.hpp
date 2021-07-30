@@ -4,10 +4,13 @@
 
 #ifndef UNTITLED_LTEMODULEA_HPP
 #define UNTITLED_LTEMODULEA_HPP
+#include "LteModule.hpp"
 
-
-class LteModuleA {
-
+class LteModuleA : public LteModule{
+public:
+    uint8_t GetSignalStrngth() override;
+    string GetSimCardIMEI() override;
+    string GetSimCardICCID() override;
 };
 
 

@@ -2,11 +2,11 @@
 // Created by xiaowei on 2021/7/30.
 //
 
-#ifndef UNTITLED_LTEMOUDLEB_HPP
-#define UNTITLED_LTEMOUDLEB_HPP
+#ifndef UNTITLED_LTEMODULEB_HPP
+#define UNTITLED_LTEMODULEB_HPP
 
 #include "LteModule.hpp"
-class LteMoudleB :public LteModule {
+class LteModuleB :public LteModule {
 public:
  uint8_t GetSignalStrngth() override;
  string GetSimCardIMEI() override;
@@ -14,4 +14,4 @@ public:
 };
 
 
-#endif //UNTITLED_LTEMOUDLEB_HPP
+#endif //UNTITLED_LTEMODULEB_HPP
