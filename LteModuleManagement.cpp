@@ -4,16 +4,16 @@
 
 #include "LteModuleManagement.hpp"
 
-LteModule * LteModuleAManagement::FactoryMethod() const {
+std::shared_ptr<LteModule> LteModuleAManagement::FactoryMethod() const {
 
-    return new LteModuleA();
+    return std::shared_ptr<LteModule>( new LteModuleA());
 
 
 }
 
-LteModule * LteModuleBManagement::FactoryMethod() const {
+std::shared_ptr<LteModule> LteModuleBManagement::FactoryMethod() const {
 
-    return new LteModuleB();
+    return std::shared_ptr<LteModule>( new LteModuleB());
 
 
 }
